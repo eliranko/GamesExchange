@@ -1,3 +1,39 @@
-p {
-    color: red;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app-container {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav"
+        "empty-left side main empty-right";
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: minmax(0px, 200px) 220px minmax(500px, auto) minmax(0px, 420px);
+    height:100vh;
+}
+
+.app-container > nav {
+    grid-area: nav;
+    background-color: red;
+}
+
+.app-container > aside {
+    grid-area: side;
+    background-color:gray;
+}
+
+.app-container > main {
+    grid-area: main;
+    background-color: blue;
+}
+
+.app-container > .empty-left {
+    grid-area: empty-left;
+    background-color: lightblue;
+}
+
+.app-container > .empty-right {
+    grid-area: empty-right;
+    background-color: lightblue;
 }
