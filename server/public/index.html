@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-
+    <!-- Disable cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
     <link href="index.css" rel="stylesheet">
 
     <title>Games Exchange</title>
@@ -12,9 +16,13 @@
 <body>
     <div class="app-container">
         <nav>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempora fugit. Debitis impedit itaque,
-            sapiente sed voluptates molestias est veritatis placeat recusandae similique odio eum quibusdam. Ipsam nemo
-            debitis dicta?
+            <ul class="nav-container">
+                <li class="home"><a href="#"><img src="assets/logo.png" alt="logo">Home</a></li>￼
+                <li class="search">
+                    <input type="text" class="search-input" placeholder="Search">
+                </li>
+                <li class="settings"><a href="#">Settings</a></li>
+            </ul>
         </nav>
         <aside>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id omnis ducimus ratione possimus! Odit est, quasi
@@ -25,16 +33,8 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias corrupti numquam nobis architecto omnis
             sit laborum dolore exercitationem, aliquid vel et, in voluptatum vitae. Minus numquam cumque ex quaerat?
         </main>
-        <div class="empty-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus voluptatibus quod nemo tenetur,
-            commodi eveniet mollitia distinctio facere? Cumque, temporibus placeat quo assumenda a ullam eum doloremque
-            ipsum culpa!
-        </div>
-        <div class="empty-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus voluptatibus quod nemo tenetur,
-            commodi eveniet mollitia distinctio facere? Cumque, temporibus placeat quo assumenda a ullam eum doloremque
-            ipsum culpa!
-        </div>
+        <div class="empty empty-left"></div>
+        <div class="empty empty-right"></div>
     </div>
 </body>
 
