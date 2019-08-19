@@ -7,7 +7,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    
+
+    <link href="reset.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
     <title>Games Exchange</title>
@@ -15,14 +16,16 @@
 
 <body>
     <div class="app-container">
-        <nav>
-            <ul class="nav-container">
-                <li class="home"><a href="#"><img src="assets/logo.png" alt="logo">Home</a></li>￼
-                <li class="search">
-                    <input type="text" class="search-input" placeholder="Search">
-                </li>
-                <li class="settings"><a href="#">Settings</a></li>
-            </ul>
+        <nav class="nav-container disable-select">
+            <div> <!-- nav left -->
+                <a class="nav-btn" href="#">Home</a>
+            </div>
+            <div class="nav-center"> <!-- nav center -->
+                <input type="text" placeholder="Search">
+            </div>
+            <div> <!-- nav right -->
+                <a class="nav-btn" href="#">Settings</a>
+            </div>
         </nav>
         <aside>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id omnis ducimus ratione possimus! Odit est, quasi
