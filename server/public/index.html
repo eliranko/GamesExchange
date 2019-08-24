@@ -8,8 +8,14 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
+    <!-- Styles -->
     <link href="reset.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link href="chat/chat.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script src="chat/chat.js"></script>
 
     <title>Games Exchange</title>
 </head>
@@ -17,24 +23,56 @@
 <body>
     <div class="app-container">
         <nav class="nav-container disable-select">
-            <div> <!-- nav left -->
+            <div>
+                <!-- nav left -->
                 <a class="nav-btn" href="#">Home</a>
             </div>
-            <div class="nav-center"> <!-- nav center -->
+            <div class="nav-center">
+                <!-- nav center -->
                 <input type="text" placeholder="Search">
             </div>
-            <div> <!-- nav right -->
+            <div>
+                <!-- nav right -->
                 <a class="nav-btn" href="#">Settings</a>
             </div>
         </nav>
         <aside>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id omnis ducimus ratione possimus! Odit est, quasi
-            harum, animi laborum sapiente tempora consectetur necessitatibus ad corrupti et nihil officia deserunt
-            officiis.
+            <div class="sidebar-chat-container disable-select">
+                <p>Chat messages:</p>
+                <ul>
+                    <li id="chat-yos-shalev">
+                        <span class="sidebar-chat-online-dot"></span>
+                        <button class="sidebar-start-chat-btn" onclick="openChat('chat-yos-shalev')">Yossi Shalev</button>
+                        <span class="sidebar-chat-notif">3</span>
+                    </li>
+                    <li>
+                        <span class="sidebar-chat-offline-dot"></span>
+                        <button class="sidebar-start-chat-btn">Yossi Shalev</button>
+                        <span class="sidebar-chat-notif">1</span>
+                    </li>
+                    <li>
+                        <span class="sidebar-chat-online-dot"></span>
+                        <button class="sidebar-start-chat-btn">Yossi Shalev</button>
+                        <span class="sidebar-chat-notif">11</span>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <main>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias corrupti numquam nobis architecto omnis
-            sit laborum dolore exercitationem, aliquid vel et, in voluptatum vitae. Minus numquam cumque ex quaerat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero blanditiis, id cumque dicta ipsa ab
+            perferendis esse nemo ullam nobis velit deleniti quasi consequatur sit eos. Itaque nobis dolore odit
+            eligendi sapiente delectus reprehenderit fugiat blanditiis dolor quae iure, labore suscipit officiis quo
+            voluptas deleniti ipsa veniam ratione maiores error tempora perferendis, iusto magni. Illo eum est animi
+            nulla illum, cumque assumenda, libero nemo magnam aut nihil sequi, quis pariatur. Blanditiis soluta, quod
+            voluptates dicta reiciendis corporis doloribus commodi numquam aliquid ratione sint provident quam! Quasi
+            rem, exercitationem vitae praesentium, sit et distinctio officia quod temporibus eum explicabo iste ab quam
+            nisi nihil dolorum ipsa in repellat magni commodi veniam esse sint voluptates! Laboriosam ipsum perferendis
+            molestiae sequi quibusdam, nam nemo aspernatur commodi placeat enim porro qui distinctio doloremque error
+            fugiat quis? Vero amet, sint optio ab fuga quo eum omnis esse dolor accusamus eligendi officiis ad,
+            laboriosam nesciunt architecto iure excepturi cum deserunt quasi quis animi reiciendis doloribus dignissimos
+            assumenda. Laborum nemo necessitatibus blanditiis, iusto unde distinctio iste quis alias ipsum dignissimos
+            accusantium illo sit quibusdam ex quidem ea, in corporis nulla? Nisi corporis veniam alias non, sequi
+            perferendis dicta itaque! Placeat corporis impedit, a illo reprehenderit nam!
         </main>
         <div class="empty empty-left"></div>
         <div class="empty empty-right"></div>

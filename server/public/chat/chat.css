@@ -1,0 +1,98 @@
+.chat-box {
+    width: 270px;
+    --you-color: #a3c0ff;
+    --back-color: #a3fff9;
+    --header-color: #ffedc6;
+    position: absolute;
+    z-index: 1;
+    --chat-box-pos-top: -5px;
+    top: var(--chat-box-pos-top);
+    left: calc(100% + 10px);
+}
+
+.chat-box::after {
+    content: " ";
+    position: absolute;
+    top: calc(var(--sidebar-chat-user-padding) + var(--chat-box-pos-top) * -1 + .5rem);
+    right: 100%;
+    margin-top: calc(var(--sidebar-chat-user-padding) * -1 + var(--chat-box-pos-top));
+    border-width: calc(var(--sidebar-chat-user-padding) + var(--chat-box-pos-top) * -1);
+    border-style: solid;
+    border-color: transparent var(--header-color) transparent transparent;
+}
+
+/* Header */
+.chat-box header {
+    background-color: var(--header-color);
+    overflow: auto;
+    padding-bottom: 10px;
+    --chat-header-height: calc(var(--chat-box-pos-top) * -1 + 1.5rem);
+    height: var(--chat-header-height);
+}
+
+.chat-box header p {
+    float: left;
+    margin: calc( (var(--chat-header-height) - 1rem) / 2) 0 calc( (var(--chat-header-height) - 1rem) / 2) 5px;
+}
+
+.chat-box header button {
+    float: right;
+    margin: calc( (var(--chat-header-height) - 1rem) / 2) 5px calc( (var(--chat-header-height) - 1rem) / 2) 0;
+    border: none;
+    background-color: transparent;
+}
+
+/* Chat messages */
+.chat-msgs {
+    background-color: var(--back-color);
+    clear: both;
+    overflow: auto;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.chat-msgs .msg {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    clear: both;
+    word-wrap: break-word;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+.chat-msgs .you {
+    float: right;
+    background-color: var(--you-color);
+}
+
+.chat-msgs .him {
+    float: left;
+    background-color: #ffb5b7;
+}
+
+/* Chat insersion */
+.chat-box .insert {
+    --send-width: 50px;
+    --height: 2.5rem;
+}
+
+.chat-box .insert textarea {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: calc(100% - var(--send-width));
+    height: var(--height);
+    resize: none;
+}
+.chat-box .insert button {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: var(--send-width);
+    height: var(--height);
+    text-align: center;
+    background-color: var(--you-color);
+}
