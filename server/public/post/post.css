@@ -1,0 +1,48 @@
+.post-container {
+    margin: 10px;
+    position: relative;
+    z-index: 0;
+    max-width: 800px;
+    min-height: 450px;
+}
+
+.post-container-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Header */
+.post-container header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(213,5, 13, 0.4);
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.post-container header .post-msg-btn {
+    background: none;
+    border: none;
+}
+
+/* Main */
+.post-container main {
+    z-index: 1;
+    position: relative;
+}
+
+/* Footer */
+.post-container footer {
+    z-index: 1;
+    position: relative;
+}
+
+.post-container .post-cover-img {
+    display: block;
+}

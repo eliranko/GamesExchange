@@ -24,7 +24,7 @@
 /* Header */
 .chat-box header {
     background-color: var(--header-color);
-    overflow: auto;
+    overflow: hidden;
     padding-bottom: 10px;
     --chat-header-height: calc(var(--chat-box-pos-top) * -1 + 1.5rem);
     height: var(--chat-header-height);

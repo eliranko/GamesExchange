@@ -2,18 +2,11 @@
 
 var chat;
 var isChatOpen;
-var httpRequest = new XMLHttpRequest();
-httpRequest.onreadystatechange = function () {
-    if (this.readyState != XMLHttpRequest.DONE) return;
-    if (this.status != 200) return;
-    chat = this.responseText;
-    // document.querySelector('.app-container > main').innerHTML = this.responseText;
-}
-httpRequest.open('GET', 'chat/chat.html');
-httpRequest.send();
+
+fetch('chat/chat.html').then(html => chat = html)
 
 function openChat(id) {
-    if (isChatOpen) {
+    if (chat == undefined || isChatOpen) {
         return;
     }
     isChatOpen = true;
