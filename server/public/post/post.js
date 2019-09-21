@@ -3,6 +3,8 @@ var container;
 fetch('post/post.html').then(html => {
     container = document.querySelector(".app-container main");
     container.insertAdjacentHTML('beforeend', html);
+    container.insertAdjacentHTML('beforeend', html);
+    container.insertAdjacentHTML('beforeend', html);
 });
 
 fetch("https://api.rawg.io/api/games?page_size=5&search=gtav").then(res => {

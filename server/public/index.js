@@ -1,3 +1,9 @@
+document.querySelector('.app-container').addEventListener('scroll', function() { 
+    alert('1)');
+    var main = document.querySelector(".app-container main");
+    main.scrollTop = main.scrollTop + 10;
+});
+
 function fetch(url) {
     var httpRequest = new XMLHttpRequest();
 

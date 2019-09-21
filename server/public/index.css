@@ -143,3 +143,15 @@ a.nav-btn:active, a.nav-btn:focus, .sidebar-start-chat-btn {
     top: -5px;
     left: -3px;
 }
+
+/* Main */
+.app-container main {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-container main .post-container {
+    text-align: center;
+}
