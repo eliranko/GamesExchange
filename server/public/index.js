@@ -18,3 +18,10 @@ function fetch(url) {
         httpRequest.send();
     })
 }
+
+function stringToHtmlElement(html) {
+    var template = document.createElement('template');
+    html = html.trim(); // Don't return a text node of whitespace as the result
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
