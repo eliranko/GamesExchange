@@ -1,9 +1,3 @@
-document.querySelector('.app-container').addEventListener('scroll', function() { 
-    alert('1)');
-    var main = document.querySelector(".app-container main");
-    main.scrollTop = main.scrollTop + 10;
-});
-
 function fetch(url) {
     var httpRequest = new XMLHttpRequest();
 
@@ -21,7 +15,6 @@ function fetch(url) {
 
 function stringToHtmlElement(html) {
     var template = document.createElement('template');
-    html = html.trim(); // Don't return a text node of whitespace as the result
     template.innerHTML = html;
     return template.content.firstChild;
 }
