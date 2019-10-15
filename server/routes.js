@@ -1,19 +1,10 @@
 const express = require('express');
-const posts = require('./posts');
-const chat = require('./chat');
 const app = express();
 exports.app = app;
+exports.root = '/api';
 
-// Set routes
+// serve static resources
 app.use(express.static(__dirname + '/public'));
 
-const root = '/api';
-// Posts
-app.get(root + '/posts', (req, res) => {
-    res.send(posts.getPosts());
-});
-
-// Chat
-app.get(root + '/chat', (req, res) => {
-    res.send(chat.getChat());
-});
+require('./chat');
+require('./posts');
