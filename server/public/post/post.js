@@ -1,4 +1,4 @@
-Promise.all([fetch('post/post.html'), fetch('api/posts')]).then(values => {
+Promise.all([fetch('post/post.html'), fetch('api/post')]).then(values => {
     let container = document.querySelector(".app-container main");
 
     postElement = stringToHtmlElement(values[0]);

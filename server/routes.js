@@ -6,5 +6,6 @@ exports.root = '/api';
 // serve static resources
 app.use(express.static(__dirname + '/public'));
 
-require('./chat');
-require('./posts');
+require('./chat_manager');
+require('./post_manager');
+require('./user_manager');

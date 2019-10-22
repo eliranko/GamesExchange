@@ -1,6 +1,6 @@
 .chat-box {
     width: 270px;
-    --you-color: #a3c0ff;
+    --me-color: #a3c0ff;
     --back-color: #a3fff9;
     --header-color: #ffedc6;
     position: absolute;
@@ -61,9 +61,9 @@
     max-width: 200px;
 }
 
-.chat-msgs .you {
+.chat-msgs .me {
     float: right;
-    background-color: var(--you-color);
+    background-color: var(--me-color);
 }
 
 .chat-msgs .him {
@@ -94,5 +94,5 @@
     width: var(--send-width);
     height: var(--height);
     text-align: center;
-    background-color: var(--you-color);
+    background-color: var(--me-color);
 }
